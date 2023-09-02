@@ -1,0 +1,8 @@
+{
+    "placa": "ADD9899",
+    "consumo_medido": 400.0,
+    "consumo_inserido": 1000.0,
+    "fator_antigo": 2000.0,
+    "novo_fator_arredondado": 800,
+    "data_insercao": "2023-08-31 16:42:10"
+}
