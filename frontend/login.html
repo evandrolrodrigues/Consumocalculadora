@@ -10,22 +10,25 @@
 </head>
 
 <body class="container">
-  <section class="d-flex justify-content-center align-items-center vh-100">
-    <img src="" alt="">
-    <form>
-      <div>
+  <section class="d-flex flex-column justify-content-center align-items-center vh-100">
+    <img src="https://app.wikidados.com.br/statics/img/logo/logo_horizontal.png" alt="Logo" width="70%">
+    <form class="container-fluid w-75">
+      <div class="mt-5">
         <label for="userName" class="form-label">Login</label>
         <input type="email" class="form-control" id="userName">
       </div>
-      <div>
+      <div class="mt-3">
         <label for="userPassword" class="form-label">Senha</label>
         <input type="password" class="form-control" id="userPassword">
       </div>
-      <div class="form-check">
-        <label class="form-check-label" for="rememberPassword">Lembrar Senha</label>
-        <input type="checkbox" class="form-check-input" id="rememberPassword">
+      <input type="button" class="btn btn-primary w-100 mt-4" onclick="login()" value="Log In"></input>
+      <div class="d-flex justify-content-between form-check mt-3" style="font-size: 14px;">
+        <div>
+          <label class="form-check-label" for="rememberPassword">Lembrar Senha</label>
+          <input type="checkbox" class="form-check-input" id="rememberPassword">
+        </div>
+        <a href="cad.html">Cadastre-se</a>
       </div>
-      <input type="button" class="btn btn-primary w-100" onclick="login()" value="Log In"></input>
     </form>
   </section>
 
