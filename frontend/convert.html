@@ -11,13 +11,13 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body class="container d-flex flex-column justify-content-center vh-100">
+<body class="container d-flex flex-column justify-content-center">
   <header>
-    <nav class="navbar navbar-expand-md flex-md-column bg-secondary fixed-top pt-2 p-0">
+    <nav class="navbar navbar-expand-md bg-dark fixed-top">
       <div class="container container-fluid">
         <!-- Logo barra de navegação -->
         <a class="navbar-brand" href="#">
-          <img src="https://app.wikidados.com.br/statics/img/logo/logo_horizontal.png" alt="" width="100px">
+          <img src="./assets/img/Group 2.png" alt="" width="100px">
         </a>
 
         <!-- Botão do offcanva -->
@@ -27,7 +27,7 @@
         </button>
 
         <!-- Offcanva -->
-        <div class="d-flex d-md-none offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
           <!-- Offcanva logo -->
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">De Wiker para Wiker</h5>
@@ -66,19 +66,19 @@
 
               <!-- Navbar -->
               <ul class="navbar-nav ps-3 mt-5">
-                <li class="nav-item">
+                <li class="nav-item pt-2 pb-2">
                   <a class="nav-link d-flex align-items-center" href="index.html">
                     <span class="material-symbols-outlined pe-2">calculate</span>
-                    Fator de combutível
+                    Fator de combustível
                   </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item pt-2 pb-2">
                   <a class="nav-link d-flex align-items-center" href="#">
                     <span class="material-symbols-outlined pe-2">sensors</span>
                     Script's de CAN
                   </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item pt-2 pb-2">
                   <a class="nav-link d-flex align-items-center" href="convert.html">
                     <span class="material-symbols-outlined pe-2">conversion_path</span>
                     Formatador TXT
@@ -93,86 +93,44 @@
             </a>
           </div>
         </div>
-
-        <!-- Barra de navegação desktop -->
-        <div class="d-none d-md-flex">
-          <div class="d-flex align-items-center">
-            <span class="material-symbols-outlined" style="font-size: 2.5rem;">account_circle</span>
-            <div class="ms-2">
-              <div class="btn-group">
-                <button type="button" class="btn rounded dropdown-toggle dropdown-toggle-split"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="me-2">Israel Sandrino</span>
-                  <span class="visually-hidden">Toggle Dropdown</span>
-                </button>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      <div class="d-flex align-items-center">
-                        <span class="material-symbols-outlined">settings</span>
-                        <span class="ps-1">Configurações</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="login.html">
-                      <div class="d-flex align-items-center">
-                        <span class="material-symbols-outlined">power_settings_new</span>
-                        <span class="ps-1">Logout</span>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div> 
       </div>
+    </nav>
+  </header>
 
-      <div class="d-none d-md-flex w-100">
-        <div class="bg-success line h-100">
-          <div class="container p-0 d-none d-md-flex ">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center " href="index.html">
-                  <span class="material-symbols-outlined">calculate</span>
-                  Fator de combutível
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center" href="#">
-                  <span class="material-symbols-outlined">sensors</span>
-                  Script's de CAN
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center" href="convert.html">
-                  <span class="material-symbols-outlined">conversion_path</span>
-                  Formatador TXT
-                </a>
-              </li>
-            </ul>
+  <main class="px-4" style="margin-top: 56px">
+    <!-- Área de conversão -->
+    <section class="mt-4">
+      <div class="card text-center">
+        <div class="card-header bg-primary text-light fw-semibold d-flex align-items-center justify-content-center">
+          <span class="material-symbols-outlined me-2">
+            conversion_path
+          </span>
+          Formatador TXT
+        </div>
+        <div class="card-body">
+          <div>
+            <input type="file" class="form-control" name="" id="" placeholder="" aria-describedby="fileHelpId">
+            <div id="fileHelpId" class="form-text">O formato do arquivo deverá obrigatoriamente ser em .txt</div>
           </div>
         </div>
       </div>
+    </section>
 
-      
-    </nav>
-
-    
-  </header>
-
-  <main style="margin-top: 56px">
-    <form class="text-center mt-3 py-2 px-4">
-      <h4>Consultar Placa</h4>
-      <p class="mt-4">
-        Por favor, introduza uma placa no campo de pesquisa abaixo. Caso tenha realizado previamente alguma configuração relacionada ao combustível, um registro histórico correspondente será exibido, caso contrário, será efetuado um registro para o veículo em questão.
-      </p>
-      <div class="py-2 mt-4">
-        <input class="form-control" type="text">
-      </div>
-      <input class="btn btn-primary w-100 mt-3" type="button" value="Consultar" onclick="calculadora()">
-    </form>
+    <section class="mt-4">
+        <div class="card text-center">
+          <div class="card-header bg-primary text-light fw-semibold d-flex align-items-center justify-content-center">
+            <span class="material-symbols-outlined me-2">
+              description
+            </span>
+            Visualização da saída
+          </div>
+          <div class="card-body mb-3">
+            <div>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+        </div>
+      </section>
   </main>
 
   <script src="./assets/js/main.js"></script>
