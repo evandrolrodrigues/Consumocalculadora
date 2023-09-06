@@ -3,3 +3,18 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+.divisor-line {
+    display: flex;
+}
+
+.line {
+    height: 1px;
+    background-color: rgb(108,117,125, .6);
+    position: relative;
+    top: .6em;
+    flex-shrink: 1;
+    flex-grow: 1;
+    display: block;
+    width: 10px;
+}
