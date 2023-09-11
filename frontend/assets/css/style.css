@@ -2,6 +2,7 @@ html, body {
     /* height: 100%; */
     margin: 0;
     padding: 0;
+    background-color: #e9e9e9;
 }
 
 .divisor-line {
@@ -17,4 +18,50 @@ html, body {
     flex-grow: 1;
     display: block;
     width: 10px;
+}
+
+.evo-solutions-img { 
+    width: 85%; 
+}
+
+.login {
+    width: 100%; 
+}
+
+.light-grey {
+    color: #e9e9e9;
+}
+
+.account:hover {
+    border: 1px solid #e9e9e9;
+}
+
+.main {
+    margin-top: 3.5rem;
+}
+
+@media (min-width: 576px) {
+    .login { width: 60%; }
+    .evo-solutions-img { width: 85%; }
+}
+
+@media (min-width: 768px) {
+    .login { width: 55%; }
+    .evo-solutions-img { width: 90%; }
+    .main { margin-top: 7rem;}
+}
+
+@media (min-width: 992px) {
+    .login { width: 45%; }
+    .evo-solutions-img { width: 90%; }
+}
+
+@media (min-width: 1200px) {
+    .login { width: 40%; }
+    .evo-solutions-img { width: 90%; }
+}
+
+@media (min-width: 1400px) {
+    .login { width: 30%; }
+    .evo-solutions-img { width: 92%; }
 }

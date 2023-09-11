@@ -11,21 +11,23 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body class="container">
+<body class="container login">
   <section class="d-flex flex-column justify-content-center vh-100">
-    <img class="mx-auto" src="https://app.wikidados.com.br/statics/img/logo/logo_horizontal.png" alt="Logo" width="70%">
+    <img class="evo-solutions-img mx-auto mb-5" src="./assets/img/Logo 2.png" alt="Logo">
 
-    <form class="text-center mt-3 py-2 px-4">
-      <div class="py-2">
-        <input type="email" class="form-control" id="userName" placeholder="E-mail">
+    <form class="text-center mx-auto w-100 mt-3 py-2 px-4">
+      <div class="form-floating py-1">
+        <input type="email" class="form-control" name="user-email" id="user-email" placeholder="">
+        <label for="user-email">E-mail</label>
       </div>
-      <div class="py-2">
-        <input type="password" class="form-control" id="userPassword" placeholder="Senha">
+      <div class="form-floating py-1">
+        <input type="password" class="form-control" name="user-password" id="user-password" placeholder="">
+        <label for="user-password">Senha</label>
       </div>
       <input type="button" class="btn btn-primary w-100 mt-4" onclick="login()" value="Entrar"></input>
     </form>
 
-    <div class="d-flex p-4 text-secondary">
+    <div class="d-flex p-4 my-4 text-secondary">
       <div class="line"></div>
       <div class="px-2" style="font-size: 12px;">OU</div>
       <div class="line"></div>
